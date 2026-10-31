@@ -40,6 +40,10 @@ The UI features a dark charcoal background, antique gold accents, and serif typo
 | `DEVLOG.md` | Development log and trial-and-error notes (in Korean). |
 | `NEXT_STEPS.md` | Planned improvements and ideas (in Korean). |
 
+## AI-Assisted Development
+
+Throughout the development process, AI tools were utilized for documentation organizing, troubleshooting bugs, and iterative feedback refinement. All core problem definitions, feature prioritization, and final code decisions were independently guided and verified by the creator.
+
 ## Run Locally
 
 Python 3.12 is required. Run the following commands in your terminal:
