@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Concilium — The Council of Classical Thinkers</title>
+  <link rel="icon" href="data:,">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header><a href="#">CONCILIUM</a><select id="language" aria-label="Language"><option value="ko">한국어</option><option value="en">English</option></select></header>
+  <main>
+    <section class="hero"><p class="eyebrow">VERITAS · VIRTUS · PRUDENTIA</p><h1>Concilium</h1><p id="subtitle"></p><div class="ornament">✧</div></section>
+    <form id="councilForm" class="panel">
+      <p class="eyebrow">PETITIO</p><h2 id="formTitle"></h2>
+      <div class="modes"><label><input type="radio" name="mode" value="sample" checked><span id="sampleLabel"></span></label><label><input type="radio" name="mode" value="ai"><span id="aiLabel"></span></label></div>
+      <p id="modeNote" class="note"></p>
+      <label id="questionLabel" for="concern"></label>
+      <textarea id="concern" maxlength="2000" rows="4"></textarea>
+      <label id="thinkersLabel"></label><div id="thinkers" class="thinkers"></div>
+      <div id="keyBox" hidden><label id="keyLabel" for="apiKey"></label><input id="apiKey" type="password" placeholder="sk-…" autocomplete="off" spellcheck="false"><p id="keyNote" class="note"></p></div>
+      <button id="run" type="submit"></button>
+      <p id="status" role="status" aria-live="polite"></p>
+      <div id="error" role="alert" hidden><p id="errorText"></p><a id="billing" href="https://platform.openai.com/settings/organization/billing/overview" target="_blank" rel="noreferrer" hidden></a></div>
+    </form>
+    <section id="result" hidden><p class="eyebrow">ACTA · PROCEEDINGS</p><h2 id="resultTitle"></h2><p id="resultNote" class="note"></p><blockquote id="thesis"></blockquote><div id="rounds"></div><a id="download" class="download" download="Concilium_Report.md"></a></section>
+    <footer>CONCILIUM · A PHILOSOPHICAL EXPERIMENT</footer>
+  </main>
+</body>
+</html>
